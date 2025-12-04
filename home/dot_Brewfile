@@ -1,5 +1,6 @@
 brew "chezmoi"
 # brew "latexindent"
+brew "mas"
 brew "mise"
 brew "tree"
 brew "uv"
@@ -14,3 +15,9 @@ cask "notion"
 cask "orbstack"
 cask "postman"
 cask "visual-studio-code"
+mas "Goodnotes", id: 1444383602
+mas "Kindle", id: 302584613
+mas "LINE", id: 539883307
+mas "Notion Web Clipper", id: 1559269364
+mas "Prime Video", id: 545519333
+mas "Slack", id: 803453959
