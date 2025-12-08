@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 # NOTE: https://qiita.com/keitean/items/6972b8f34636a88bae74
 
 # F1, F2, ... を標準のファンクションキーとして使用する
