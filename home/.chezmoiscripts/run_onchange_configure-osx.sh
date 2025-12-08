@@ -1,8 +1,31 @@
 #!/usr/bin/env zsh
+# NOTE: https://macos-defaults.com
 # NOTE: https://qiita.com/keitean/items/6972b8f34636a88bae74
 
 # F1, F2, ... を標準のファンクションキーとして使用する
 defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
+
+# ライブ変換を無効にする
+defaults write com.apple.inputmethod.Kotoeri JIMPrefLiveConversionKey -bool false
+
+# Windows 風のキー操作を有効にする
+defaults write com.apple.inputmethod.Kotoeri JIMPrefWindowsModeKey -bool true
+
+# トラックパッドの感度を最大にする
+defaults write NSGlobalDomain com.apple.trackpad.scaling -float 3
+
+# バッテリー残量をパーセントで表示する
+defaults -currentHost write com.apple.controlcenter BatteryShowPercentage -bool true
+
+# Dock のアイコンサイズを 40 にする
+defaults write com.apple.dock tilesize -int 40
+
+# Finder の新規ウィンドウで表示される場所をホームディレクトリにする
+defaults write com.apple.finder NewWindowTarget -string "PfHm"
+
+# Finder のデフォルト表示をカラム形式にする
+# （すでに存在しているディレクトリは個別に表示形式を記録しているため、この設定は反映されない）
+defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
 # デスクトップのアイコンをグリッドに沿うようにする
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
