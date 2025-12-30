@@ -1,5 +1,7 @@
 eval "$(starship init zsh)"
 eval "$(mise activate zsh)"
 
+hash -d icloud=~/Library/Mobile\ Documents/com~apple~CloudDocs
+
 autoload -Uz compinit
 compinit
