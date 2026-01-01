@@ -32,3 +32,7 @@ defaults write com.apple.finder ShowPathbar -bool true
 
 # デスクトップのアイコンをグリッドに沿うようにする
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+
+# ファイアウォールを有効化する
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
