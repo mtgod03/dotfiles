@@ -27,5 +27,8 @@ defaults write com.apple.finder NewWindowTarget -string "PfHm"
 # （すでに存在しているディレクトリは個別に表示形式を記録しているため、この設定は反映されない）
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
+# Finder でパスバーを表示する
+defaults write com.apple.finder ShowPathbar -bool true
+
 # デスクトップのアイコンをグリッドに沿うようにする
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
