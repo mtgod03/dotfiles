@@ -5,6 +5,9 @@
 # F1, F2, ... を標準のファンクションキーとして使用する
 defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
 
+# 文頭を自動で大文字にしないようにする
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+
 # ライブ変換を無効にする
 defaults write com.apple.inputmethod.Kotoeri JIMPrefLiveConversionKey -bool false
 
