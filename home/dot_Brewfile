@@ -1,4 +1,5 @@
 brew "chezmoi"
+brew "fzf"
 # brew "latexindent"
 brew "mas"
 brew "mise"
