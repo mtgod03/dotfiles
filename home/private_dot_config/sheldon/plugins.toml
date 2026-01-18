@@ -17,6 +17,9 @@ shell = "zsh"
 [plugins.starship]
 inline = 'eval "$(starship init zsh)"'
 
+[plugins.zoxide]
+inline = 'eval "$(zoxide init zsh)"'
+
 [plugins.fzf]
 inline = "source <(fzf --zsh)"
 
