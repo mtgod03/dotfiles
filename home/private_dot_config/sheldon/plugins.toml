@@ -27,5 +27,6 @@ inline = "source <(fzf --zsh)"
 github = "zsh-users/zsh-autosuggestions"
 use = ["{{ name }}.zsh"]
 
+# テーマは base16 か zdharma が好み
 [plugins.fast-syntax-highlighting]
 github = "zdharma-continuum/fast-syntax-highlighting"
