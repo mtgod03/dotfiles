@@ -1,6 +1,8 @@
 eval "$(sheldon source)"
 eval "$(mise activate zsh)"
 
+export PATH="$(aqua root-dir)/bin:$PATH"
+
 autoload -Uz compinit
 compinit
 

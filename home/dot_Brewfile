@@ -1,3 +1,4 @@
+brew "aqua"
 brew "chezmoi"
 brew "fzf"
 # brew "latexindent"
