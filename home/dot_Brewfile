@@ -1,6 +1,7 @@
 brew "aqua"
 brew "chezmoi"
 brew "fzf"
+brew "jq"
 # brew "latexindent"
 brew "mas"
 brew "mise"
