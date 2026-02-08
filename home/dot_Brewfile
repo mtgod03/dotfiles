@@ -21,6 +21,7 @@ cask "notion"
 cask "orbstack"
 cask "postman"
 cask "visual-studio-code"
+# cask "zotero"
 mas "Bitwarden", id: 1352778147
 mas "Goodnotes", id: 1444383602
 mas "Kindle", id: 302584613
