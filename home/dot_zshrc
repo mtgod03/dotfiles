@@ -7,3 +7,14 @@ autoload -Uz compinit
 compinit
 
 hash -d icloud=~/Library/Mobile\ Documents/com~apple~CloudDocs
+
+# fzf を使用してリポジトリを選択し移動する
+# $DEV_ROOT 直下にリポジトリがフラットに配置されていることを前提とする
+repo() {
+  local -r DEV_ROOT="${HOME}/dev"
+  local repo_name="$(print -l "${DEV_ROOT}"/*(/:t) | fzf --preview "ls \"${DEV_ROOT}\"/{}")"
+
+  # fzf がキャンセルされたときに cd "${DEV_ROOT}" が実行されないようにする
+  [[ -z "${repo_name}" ]] && return 1
+  cd "${DEV_ROOT}/${repo_name}"
+}
