@@ -1,7 +1,7 @@
 eval "$(sheldon source)"
 eval "$(mise activate zsh)"
 
-export PATH="$(aqua root-dir)/bin:$PATH"
+export PATH="$(aqua root-dir)/bin:${PATH}"
 export AQUA_GLOBAL_CONFIG="${HOME}/.config/aquaproj-aqua/aqua.yaml"
 
 autoload -Uz compinit
