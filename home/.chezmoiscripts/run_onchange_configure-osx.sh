@@ -14,6 +14,9 @@ defaults write com.apple.inputmethod.Kotoeri JIMPrefLiveConversionKey -bool fals
 # Windows 風のキー操作を有効にする
 defaults write com.apple.inputmethod.Kotoeri JIMPrefWindowsModeKey -bool true
 
+# Spotlight のショートカットを無効化する（Raycast を使用するため）
+/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:64:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+
 # トラックパッドの感度を最大にする
 defaults write NSGlobalDomain com.apple.trackpad.scaling -float 3
 
